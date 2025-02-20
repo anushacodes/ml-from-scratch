@@ -1,8 +1,6 @@
 import numpy as np
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
-#def add(x, y):
-#    return f"The sum of {x} and {y} is: {x + y}"
 
 def euclidean_distance(x, y):
     return np.sqrt(np.sum((x - y)**2))
@@ -23,3 +21,9 @@ def evaluate_model(y_test, y_pred):
 def accuracy(y_true, y_pred):
     accuracy = np.sum(y_true == y_pred) / len(y_true)
     return accuracy
+
+def mse(y_true, y_pred):
+    return (f"MSE: {np.mean((y_true - y_pred) ** 2)}")
+
+def mae(y_true, y_pred):
+    return (f"MAE: {np.mean(np.abs(y_true - y_pred))}")
