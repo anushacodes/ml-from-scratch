@@ -1,7 +1,6 @@
 import numpy as np
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
-
 def euclidean_distance(x, y):
     return np.sqrt(np.sum((x - y)**2))
 
@@ -27,3 +26,6 @@ def mse(y_true, y_pred):
 
 def mae(y_true, y_pred):
     return (f"MAE: {np.mean(np.abs(y_true - y_pred))}")
+
+def rmse(y_true, y_pred):
+    return (f"MSE: {np.sqrt(np.mean((y_true - y_pred) ** 2))}")
