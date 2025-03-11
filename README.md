@@ -1,1 +1,1 @@
-all my ml implementtions (using numpy only) for learning purpose
+all my ml implementaions (using numpy only) for learning purpose
